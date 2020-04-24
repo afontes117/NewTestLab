@@ -45,7 +45,7 @@ tld_count = {}
 for footer in footers:
     # print(footer.a)
     link = footer.a.get('href')
-    
+    print(link)
     footer_link_list.append(link)
     
     if '.' in link: 
@@ -56,8 +56,6 @@ for footer in footers:
             tld_count[tld] = 1 
         else:
             tld_count[tld] += 1 
-
             
-print(footer_link_list)
-print(tld_count)
+
 
